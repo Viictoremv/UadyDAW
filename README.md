@@ -15,5 +15,5 @@ Adrian Fonseca Loría
 
 | Nombre     | Matricula      | Foto  |
 | :------------: |   :---:       | :--------: |
-| `Adrian Fonseca Loría`        | `21216384`       |https://res.cloudinary.com/dgd2zs8pw/image/upload/v1659046220/portfolio-photos/portfoliophoto2.jpg|
+| `Adrian Fonseca Loría`        | `21216384`       |![image](https://user-images.githubusercontent.com/77697300/187092253-86235c1c-93f3-48e6-8be0-8f7eaa3da2a7.png) |
 | `Bob`         | Test2         | `Los Angeles`   |
