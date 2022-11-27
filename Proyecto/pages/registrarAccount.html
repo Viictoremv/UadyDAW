@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Registro</title>
+        <link href="/style/estiloLogin.css" rel="stylesheet" type="text/css" />
+        <script language="javascript" src="/app/registrarAccount.js" /></script>
+    </head>
+
+    
+    <body>
+        <div class="loginBox">
+            <img class="icon" src="/assets/images/register.webp">
+            <h1>Registrate</h1>
+            <form name="form" action="./action_page.php" onsubmit="return validateForm()" method="post">
+                <!--Usuario-->
+                
+                <label for="usuario">Nombre Completo</label>
+                <input type="text"  name="validateName" id="user" >
+    
+                <!--Correo-->
+                <label for="correo">Correo Electrónico</label>
+                <input type="email"  name="validateEmailAdress" id="email">
+
+                <!--Contraseña-->
+                <label for="contraseña">Contraseña</label>
+                <input type="password"  name="validatePassword" id="password">
+    
+                <input type="submit" value="Registrarse">
+    
+            </form>
+            <p>¿Ya tienes una cuenta? <a href="/pages/loginAccount.html">Ingresa aquí </a></p>
+        </div>
+    
+    </body>
+</html>
