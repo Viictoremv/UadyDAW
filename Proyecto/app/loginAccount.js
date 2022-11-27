@@ -7,7 +7,7 @@ const validateForm = () => {
     let passInput = document.getElementById("password");
     
     if ( emailInput == "admin@hotmail.com" && passInput == "1234") { 
-      window.location("/app/ContadorCalorias.html");
+      window.location("/UadyDAW/Proyecto/app/ContadorCalorias.html");
       return true;
     } else{
       emailInput.style.borderColor = "red";
