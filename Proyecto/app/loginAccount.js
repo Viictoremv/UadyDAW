@@ -1,4 +1,5 @@
 
+/*
 const validateForm = () => {
     let email = document.forms["form"]["validateEmailAdress"].value;
     let password = document.forms["form"]["validatePassword"].value;
@@ -6,7 +7,7 @@ const validateForm = () => {
     let emailInput = document.getElementById("email");
     let passInput = document.getElementById("password");
     
-    if ( emailInput == "admin@hotmail.com" && passInput == "1234") { 
+    if ( email == "admin@hotmail.com" && password == "1234") { 
       window.location("/UadyDAW/Proyecto/app/ContadorCalorias.html");
       return true;
     } else{
@@ -16,6 +17,20 @@ const validateForm = () => {
 
     }
 
+}
+*/
 
+function errorLogin() {
+  
+  var inputEmail = document.getElementById("email");
+  var inputPassword = document.getElementById("password");
 
+  inputEmail.style.borderColor = "red";
+  inputPassword.style.borderColor = "red";
+}
+
+function errorEmail() {
+  var inputEmail = document.getElementById("email");
+
+  inputEmail.style.borderColor = "red";
 }

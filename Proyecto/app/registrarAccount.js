@@ -1,18 +1,16 @@
+function errorLogin() {
+  
+  var inputNombre = document.getElementById("user");
+  var inputEmail = document.getElementById("email");
+  var inputPassword = document.getElementById("password");
 
-const validateForm = () => {
-    let name = document.forms["form"]["validateName"].value;
-    let email = document.forms["form"]["validateEmailAdress"].value;
-    let password = document.forms["form"]["validatePassword"].value;
-    
-    let nameInput = document.getElementById("user");
-    let emailInput = document.getElementById("email");
-    let passInput = document.getElementById("password");
-    
-    if ( name == "" &&  email == "" && password == "") { 
-      nameInput.style.borderColor = "red";
-      emailInput.style.borderColor = "red";
-      passInput.style.borderColor = "red";
-      return false;
-    } 
+  inputNombre.style.borderColor = "red";
+  inputEmail.style.borderColor = "red";
+  inputPassword.style.borderColor = "red";
+}
 
+function errorEmail() {
+  var inputEmail = document.getElementById("email");
+
+  inputEmail.style.borderColor = "red";
 }
