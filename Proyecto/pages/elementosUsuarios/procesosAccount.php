@@ -7,9 +7,9 @@ function validarUsuario()
     $inputPassword = (isset($_POST["inputPassword"])) ? $_POST["inputPassword"] : "";
 
     if((empty($inputEmail) and empty($inputPassword)) or (empty($inputEmail) or empty($inputPassword))) {
-        header("location:loginAccount.php?error=1");
+        header("location:/UadyDAW/Proyecto/pages/loginAccount.php?error=1");
     } else if (validarEmail($inputEmail) == false) {
-        header("location:loginAccount.php?error=2");
+        header("location:/UadyDAW/Proyecto/pages/loginAccount.php?error=2");
     } else {
         if (!$conexion) {
             die("Connection failed: " . mysqli_connect_error());
@@ -22,9 +22,9 @@ function validarUsuario()
 
         mysqli_close($conexion);
         if ($array['contar'] == 0) {
-            header("location:loginAccount.php?error=3");
+            header("location:/UadyDAW/Proyecto/pages/loginAccount.php?error=3");
         } else {
-            header("location:ContadorCalorias.html");
+            header("location:/UadyDAW/Proyecto/pages/ContadorCalorias.php");
         }
     }
 }
@@ -50,24 +50,33 @@ function registrarUsuario() {
     $inputPassword = (isset($_POST["inputPassword"])) ? $_POST["inputPassword"] : "";
 
     if((empty($inputEmail) and empty($inputPassword) and empty($inputNombre)) or (empty($inputEmail) or empty($inputPassword) or empty($inputNombre))){
-        header("location:registrarAccount.php?error=1");
+        header("location:/UadyDAW/Proyecto/pages/registrarAccount.php?error=1");
     } else if (validarEmail($inputEmail) == false) {
-        header("location:registrarAccount.php?error=2");
+        header("location:/UadyDAW/Proyecto/pages/registrarAccount.php?error=2");
     } else {
         if (!$conexion) {
             die("Connection failed: " . mysqli_connect_error());
         }
         
-        $consulta = "INSERT INTO usuarios VALUES ('$inputNombre','$inputEmail','$inputPassword')";
-        
-        if (mysqli_query($conexion, $consulta)) {
-            header("location:loginAccount.php");
+
+        $consultaExistencia = "SELECT COUNT(*) as contar FROM usuarios WHERE Correo = '$inputEmail'";
+
+        $query = mysqli_query($conexion, $consultaExistencia);
+        $array = mysqli_fetch_array($query);
+
+        if ($array['contar'] > 0) {
+            header("location:/UadyDAW/Proyecto/pages/registrarAccount.php?error=4");
         } else {
-            header("location:registrarAccount.php?error=3");
+            $consulta = "INSERT INTO usuarios VALUES ('$inputNombre','$inputEmail','$inputPassword')";
+        
+            if (mysqli_query($conexion, $consulta)) {
+                header("location:/UadyDAW/Proyecto/pages/loginAccount.php");
+            } else {
+                header("location:/UadyDAW/Proyecto/pages/registrarAccount.php?error=3");
+            }
+
+            mysqli_close($conn);
         }
-        
-        mysqli_close($conn);
-        
     }
 }
 

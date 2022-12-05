@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-12-2022 a las 02:25:12
+-- Tiempo de generación: 05-12-2022 a las 23:03:36
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -20,6 +20,33 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `contador de calorias`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `alimentos`
+--
+
+CREATE TABLE `alimentos` (
+  `NomAlimento` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `CantAlimento` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `UnidadAlimento` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `calAlimento` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `alimentos`
+--
+
+INSERT INTO `alimentos` (`NomAlimento`, `CantAlimento`, `UnidadAlimento`, `calAlimento`) VALUES
+('Leche', '100', 'ml', '52'),
+('Cereal', '100', 'g', '379'),
+('Chuleta de cerdo', '100', 'g', '231'),
+('Frijol pinto', '100', 'g', '347'),
+('Coca-cola', '100', 'ml', '35'),
+('Agua', '100', 'ml', '0'),
+('Huevo', '100', 'g', '155'),
+('Salchicha', '100', 'g', '346');
 
 -- --------------------------------------------------------
 

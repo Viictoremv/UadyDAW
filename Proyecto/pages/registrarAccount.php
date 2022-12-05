@@ -17,7 +17,7 @@
         <div class="loginBox">
             <img class="icon" src="/UadyDAW/Proyecto/assets/images/register.webp">
             <h1>Registrate</h1>
-            <form name="form" action="procesosAccount.php"  method="post">
+            <form name="form" action="elementosUsuarios/procesosAccount.php"  method="post">
                 <!--Usuario-->
                 
                 <label for="usuario">Nombre Completo</label>
@@ -40,13 +40,15 @@
                 <?php } elseif($error == 3) { ?>
                     <script type="text/javascript">errorLogin();</script>
                     <p class = "error">Ocurrio un error al registrar al usuario</p>
-
+                <?php } elseif ($error == 4) { ?>
+                    <script type="text/javascript">errorEmail();</script>
+                    <p class = "error">El correo ya existe</p>
                 <?php } ?>
     
                 <input type="submit"  name = "boton" value="Registrarse">
     
             </form>
-            <p>¿Ya tienes una cuenta? <a href="/UadyDAW/Proyecto/pages/loginAccount.php">Ingresa aquí </a></p>
+            <p>¿Ya tienes una cuenta? <a href="loginAccount.php">Ingresa aquí </a></p>
         </div>
     
     </body>

@@ -17,7 +17,7 @@
         <div class="loginBox">
             <img class="icon" src="/UadyDAW/Proyecto/assets/images/login.png">
             <h1>Inicia Sesión</h1>
-            <form name="form" action="procesosAccount.php"  method="post">
+            <form name="form" action="elementosUsuarios/procesosAccount.php"  method="post">
                 <!--Correo-->
                 <label for="correo">Correo Electrónico</label>
                 <input type="text" name="inputEmail" id = "email">
@@ -41,7 +41,7 @@
                 <input type="submit" name = "boton" value="Iniciar Sesión">
 
             </form>
-            <p>¿No tienes una cuenta? <a href="/UadyDAW/Proyecto/pages/registrarAccount.php"> Registrate </a></p>
+            <p>¿No tienes una cuenta? <a href="registrarAccount.php"> Registrate </a></p>
         </div>
 
     </body>

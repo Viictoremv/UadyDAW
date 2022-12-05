@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: century gothic ;
+}
+
+#header .logo{
+    width: 100px;
+    height: auto;
+}
+
+#header {
+    width: 100%;
+    height: fit-content;
+    background-color:white;
+}
+
+#imagenCalorias {
+    width: 70px;
+    height: 72px;
+}
+
+#header > p {
+    color:rgb(255, 94, 0);
+    font-family: 'century gothic';
+    font-size: 50px;
+    font-weight: bolder;
+    display:inline;
+}
+
+#navBar {
+    overflow: hidden;
+    background-color: rgb(46, 195, 253);
+    display: flex;
+    justify-content: space-around;
+}
+
+#navBar p {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#divBuscar {
+    padding-left: 15px;
+}
+
+/*
+#labelDropdown {
+    font-family: century gothic ;
+    font-weight: bold;
+    font-size: small;
+}
+*/
+
+.labelAgregar {
+    font-family: century gothic ;
+    font-size: small;
+}
+
+ul {
+    list-style-type: none;
+    
+    width: 300px;
+    height: auto;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+
+li {
+    background-color: #EEEEEE;
+    border-top: 1px solid #9e9e9e;
+    padding: 5px;
+    width: 100%;
+    float: left;
+    cursor: pointer;
+}
+
+#divResultados {
+    display: none;
+}
+

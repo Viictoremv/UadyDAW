@@ -147,9 +147,10 @@ th, td {
 }
 
 #medidor {
-    width: 400px;
+    width: 500px;
     float: left;
     padding-left: 150px;
     padding-top: 300px;
     text-align: center;
+    overflow-wrap: break-word;
 }
