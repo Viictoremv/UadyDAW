@@ -8,15 +8,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Login</title>
-        <script src="/app/loginAccount.js"></script>
-        <link href="/style/estiloLogin.css" rel="stylesheet" type="text/css" />
+        <script src="/UadyDAW/Proyecto/app/loginAccount.js"></script>
+        <link href="/UadyDAW/Proyecto/style/estiloLogin.css" rel="stylesheet" type="text/css" />
         
     </head>
 
     <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark mx-auto">
             <div class="navbar-brand mx-3 d-flex align-items-baseline" href="#">
-                <img class="rounded float-start" style="width: 50px;" src="/assets/images/logo1.jpg">
+                <img class="rounded float-start" style="width: 50px;" src="/UadyDAW/Proyecto/assets/images/logo1.jpg">
                 <h1 style="color:rgb(255, 94, 0);">Fast</h1>
             </div>
             <div class="container-fluid ">
@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse " id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/pages/ContadorCalorias.html">Contador de
+                            <a class="nav-link active" aria-current="page" href="/UadyDAW/Proyecto/pages/ContadorCalorias.html">Contador de
                                 calorías</a>
                         </li>
                         <li class="nav-item">
@@ -39,16 +39,16 @@
     
                     </ul>
                     <div>
-                        <a class="btn btn-primary my-2" role="button" href="/pages/loginAccount.html">Iniciar Sesión</a>
-                        <a class="btn btn-secondary" role="button" href="/pages/registrarAccount.html">Registrarse</a>
+                        <a class="btn btn-primary my-2" role="button" href="/UadyDAW/Proyecto/pages/loginAccount.html">Iniciar Sesión</a>
+                        <a class="btn btn-secondary" role="button" href="/UadyDAW/Proyecto/pages/registrarAccount.html">Registrarse</a>
                     </div>
                 </div>
             </div>
         </nav>
         <div class="loginBox">
-            <img class="icon" src="/assets/images/login.png">
+            <img class="icon" src="/UadyDAW/Proyecto/assets/images/login.png">
             <h1>Inicia Sesión</h1>
-            <form name="form" action="elementosUsuarios/procesosAccount.php"  method="post">
+            <form name="form" action="/UadyDAW/Proyecto/elementosUsuarios/procesosAccount.php"  method="post">
                 <!--Correo-->
                 <label for="correo">Correo Electrónico</label>
                 <input type="text" name="inputEmail" id = "email">
@@ -72,7 +72,7 @@
                 <input type="submit" name = "boton" value="Iniciar Sesión">
 
             </form>
-            <p>¿No tienes una cuenta? <a href="/pages/registrarAccount.html"> Registrate </a></p>
+            <p>¿No tienes una cuenta? <a href="/UadyDAW/Proyecto/pages/registrarAccount.html"> Registrate </a></p>
         </div>
 
     </body>

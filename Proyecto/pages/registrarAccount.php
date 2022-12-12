@@ -48,7 +48,7 @@
                 <input type="submit"  name = "boton" value="Registrarse">
     
             </form>
-            <p>¿Ya tienes una cuenta? <a href="loginAccount.php">Ingresa aquí </a></p>
+            <p>¿Ya tienes una cuenta? <a href="/∂loginAccount.php">Ingresa aquí </a></p>
         </div>
     
     </body>

@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width">
     <title>Fast</title>
 
-    <link href="/style/estiloContador.css" rel="stylesheet" type="text/css" />
+    <link href="/UadyDAW/Proyecto/style/estiloContador.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -22,7 +22,7 @@ session_start();
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/contadorCalorias.js"></script>
+    <script src="/UadyDAW/Proyecto/contadorCalorias.js"></script>
 
 </head>
 
@@ -30,7 +30,7 @@ session_start();
     
     <nav class="navbar navbar-expand navbar-dark bg-dark mx-auto">
         <div class="navbar-brand mx-3 d-flex align-items-baseline" href="#">
-            <img class="rounded float-start" style="width: 50px;" src="/assets/images/logo1.jpg">
+            <img class="rounded float-start" style="width: 50px;" src="/UadyDAW/Proyecto/assets/images/logo1.jpg">
             <h1 style="color:rgb(255, 94, 0);">Fast</h1>
         </div>
         <div class="container-fluid ">
@@ -41,7 +41,7 @@ session_start();
             <div class="collapse navbar-collapse " id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/pages/ContadorCalorias.html">Contador de
+                        <a class="nav-link active" aria-current="page" href="/UadyDAW/Proyecto/pages/ContadorCalorias.html">Contador de
                             calorías</a>
                     </li>
                     <li class="nav-item">
@@ -82,7 +82,7 @@ session_start();
                             </div>
                         </div>
                         <div class="row">
-                            <a href="/pages/sesionUsuarios/agregarAlimento.php" class="btn add-btn bg-success lg mt-2"><i class="fa fa-plus"></i> Add Meal</a>
+                            <a href="/UadyDAW/Proyecto/pages/sesionUsuarios/agregarAlimento.php" class="btn add-btn bg-success lg mt-2"><i class="fa fa-plus"></i> Add Meal</a>
                         </div>
                     </form>
                 </div>

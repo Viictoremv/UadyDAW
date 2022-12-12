@@ -10,7 +10,7 @@ function validarUsuario()
     if((empty($inputEmail) and empty($inputPassword)) or (empty($inputEmail) or empty($inputPassword))) {
         header("location:/pages/loginAccount.html?error=1");
     } else if (validarEmail($inputEmail) == false) {
-        header("location:/pages/loginAccount.html?error=2");
+        header("location:/UadyDAW/Proyecto/pages/loginAccount.html?error=2");
     } else {
         if (!$conexion) {
             die("Connection failed: " . mysqli_connect_error());
@@ -23,11 +23,11 @@ function validarUsuario()
 
         mysqli_close($conexion);
         if ($array['contar'] == 0) {
-            header("location:/pages/loginAccount.html?error=3");
+            header("location:/UadyDAW/Proyecto/pages/loginAccount.html?error=3");
         } else {
             $_SESSION["inputNombre"] = $inputEmail;
     
-            header("location:/pages/sesionUsuarios/ContadorCalorias.php");
+            header("location:/UadyDAW/Proyecto/pages/sesionUsuarios/ContadorCalorias.php");
             
         }
     }
@@ -58,9 +58,9 @@ function registrarUsuario() {
         $_SESSION["inputNombre"] = $inputNombre;
         $_SESSION["inputEmail"] = $inputEmail;
         
-        header("location:/pages/registrarAccount.html?error=1");
+        header("location:/UadyDAW/Proyecto/pages/registrarAccount.html?error=1");
     } else if (validarEmail($inputEmail) == false) {
-        header("location:/pages/registrarAccount.html?error=2");
+        header("location:/UadyDAW/Proyecto/pages/registrarAccount.html?error=2");
     } else {
         if (!$conexion) {
             die("Connection failed: " . mysqli_connect_error());
@@ -71,14 +71,14 @@ function registrarUsuario() {
         $array = mysqli_fetch_array($query);
 
         if ($array['contar'] > 0) {
-            header("location:/pages/registrarAccount.html?error=4");
+            header("location:/UadyDAW/Proyecto/pages/registrarAccount.html?error=4");
         } else {
             $consulta = "INSERT INTO usuarios VALUES ('$inputNombre','$inputEmail','$inputPassword')";
         
             if (mysqli_query($conexion, $consulta)) {
-                header("location:/pages/loginAccount.html");
+                header("location:/UadyDAW/Proyecto/pages/loginAccount.html");
             } else {
-                header("location:/pages/registrarAccount.html?error=3");
+                header("location:/UadyDAW/Proyecto/pages/registrarAccount.html?error=3");
             }
             mysqli_close($conn);
         }

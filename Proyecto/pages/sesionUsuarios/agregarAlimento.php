@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="/style/estiloAgregar.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="/UadyDAW/Proyecto/style/estiloAgregar.css" rel="stylesheet" type="text/css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Agregar un alimento</title>
@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand navbar-dark bg-dark mx-auto">
         <div class="navbar-brand mx-3 d-flex align-items-baseline" href="#">
-            <img class="rounded float-start" style="width: 50px;" src="/assets/images/logo1.jpg">
+            <img class="rounded float-start" style="width: 50px;" src="/UadyDAW/Proyecto/assets/images/logo1.jpg">
             <h1 style="color:rgb(255, 94, 0);">Fast</h1>
         </div>
         <div class="container-fluid ">
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse " id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/pages/ContadorCalorias.html">Contador de
+                        <a class="nav-link active" aria-current="page" href="/UadyDAW/Proyecto/pages/ContadorCalorias.html">Contador de
                             calorías</a>
                     </li>
                     <li class="nav-item">
@@ -38,12 +38,12 @@
 
                 </ul>
                 <div>
-                <a class="btn btn-primary" href="cerrarSesion.php">
+                <a class="btn btn-primary" href="/cerrarSesion.php">
                     <?php
                     echo $_SESSION["inputEmail"];
                     ?>
                 </a>
-                    <a class="btn btn-danger" href="cerrarSesion.php">Salir</a>
+                    <a class="btn btn-danger" href="/cerrarSesion.php">Salir</a>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
                 <ul id="lista"></ul>
             </div>
         </form>
-        <script src="/app/peticionesAlimentos.js"></script>
+        <script src="/UadyDAW/Proyecto/app/peticionesAlimentos.js"></script>
     </div>
 </body>
 

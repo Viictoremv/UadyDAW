@@ -41,7 +41,7 @@
                 <input type="submit" name = "boton" value="Iniciar Sesión">
 
             </form>
-            <p>¿No tienes una cuenta? <a href="registrarAccount.php"> Registrate </a></p>
+            <p>¿No tienes una cuenta? <a href="/registrarAccount.php"> Registrate </a></p>
         </div>
 
     </body>

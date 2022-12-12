@@ -27,7 +27,7 @@ function getNombres() {
 
     if (inputAlimento.length > 0) {
 
-        let url = "/pages/elementosAgregar/getAlimentos.php"
+        let url = "/UadyDAW/Proyecto/pages/elementosAgregar/getAlimentos.php"
         let formData = new FormData()
         formData.append("campo", inputAlimento)
 
