@@ -8,6 +8,7 @@ body{
     height: 100vh;
 }
 
+
 .loginBox{
     width: 320px;
     background: white;
@@ -90,3 +91,10 @@ body{
 .loginBox a:hover{
     color: cadetblue;
 }
+
+.error{
+    text-align: center;
+    color: red;
+}
+
+

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+session_start();
+?>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -49,8 +53,12 @@
 
                 </ul>
                 <div>
-                    <a class="btn btn-primary my-2" role="button" href="/pages/loginAccount.html">Iniciar Sesión</a>
-                    <a class="btn btn-secondary" role="button" href="/pages/registrarAccount.html">Registrarse</a>
+                <a class="btn btn-primary" href="cerrarSesion.php">
+                    <?php
+                    echo $_SESSION["inputEmail"];
+                    ?>
+                </a>
+                    <a class="btn btn-danger" href="cerrarSesion.php">Salir</a>
                 </div>
             </div>
         </div>
@@ -59,17 +67,6 @@
     <div id="wrapper" class=" row">
         <div id="medidor" class="col-2">
             <div class="card">
-                <a href = "/pages/sesionUsuarios/agregarAlimento.php" id = "anadirButton">
-                    <div id = "anadir">
-                        <div id = "imagenPlatos">
-                            <img src = "/ /assets/images/egg.webp"/>
-                        </div>
-                        <div id = "textoAlimento">
-                            Añadir alimento
-                        </div>
-                    </div>
-                </a>
-                
                 <div class="card-content">
                     <span class="card-title">Add Meal / Food item</span>
                     <form class="col">
@@ -85,7 +82,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <button class="btn add-btn bg-success lg mt-2"><i class="fa fa-plus"></i> Add Meal</button>
+                            <a href="/pages/sesionUsuarios/agregarAlimento.php" class="btn add-btn bg-success lg mt-2"><i class="fa fa-plus"></i> Add Meal</a>
                         </div>
                     </form>
                 </div>
