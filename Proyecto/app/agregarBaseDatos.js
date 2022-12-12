@@ -26,7 +26,7 @@ window.onload = function () {
 }
 
 function agregarAlimento(nombre, cantidad, unidad, calorias){
-	let url = "/uadyDAW/Proyecto/pages/elementosAgregar/setAlimentosBD.php"
+	let url = "/pages/elementosAgregar/setAlimentosBD.php"
         let formData = new FormData()
         formData.append("nombre", nombre);
         formData.append("cantidad", cantidad);

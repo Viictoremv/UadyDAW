@@ -63,10 +63,21 @@ body {
     width: 600px;
 }
 
+
+
 .textInput {
     padding:8px;
     display:block;
     border-color: black;
     border-style: solid;
     width:300px;
+}
+
+
+@media print {
+    #titulo {
+        color:rgb(255, 94, 0);
+        border:none;
+        width: 600px;
+    }
 }

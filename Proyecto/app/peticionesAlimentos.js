@@ -2,7 +2,7 @@
 window.onload = function () {
 
 	//document.getElementById("imprimir").onclick = function () { window.print() };
-	document.getElementById("agregarBd").onclick = function () { verVentana("/uadyDAW/Proyecto/pages/elementosAgregar/agregarBdAlimentos.php") };	
+	document.getElementById("agregarBd").onclick = function () { verVentana("/pages/elementosAgregar/agregarBdAlimentos.html") };	
     
     document.getElementById("agregarContador").onclick = function() {
         if(!esNumeroPositivo(document.getElementById("campoCant").value)) {
@@ -27,7 +27,7 @@ function getNombres() {
 
     if (inputAlimento.length > 0) {
 
-        let url = "/uadyDAW/Proyecto/pages/elementosAgregar/getAlimentos.php"
+        let url = "/pages/elementosAgregar/getAlimentos.php"
         let formData = new FormData()
         formData.append("campo", inputAlimento)
 

@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "ironman";
+$password = "ironman";
 $dbname = "contador de calorias";
 
 // Create connection

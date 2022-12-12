@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agregar actividad</title>
+
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script language="javascript" src="/app/agregarBaseDatos.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-dark mx-auto">
+    <div class="navbar-brand mx-3 d-flex align-items-baseline" href="#">
+        <img class="rounded float-start" style="width: 50px;" src="/assets/images/logo1.jpg">
+        <h1 style="color:rgb(255, 94, 0);">Fast</h1>
+    </div>
+    <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/ContadorCalorias.html">Contador de
+                        calorías</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mis reportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Metas</a>
+                </li>
+
+            </ul>
+            <div>
+                <a class="btn btn-primary my-2" role="button" href="/pages/loginAccount.html">Iniciar Sesión</a>
+                <a class="btn btn-secondary" role="button" href="/pages/registrarAccount.html">Registrarse</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<h1 class="titulo">Agregar un alimento a la base de datos</h1>
+<form id="formulario" name="formulario" method="post" action="">
+  <table>
+    <tr>
+      <td>Nombre del alimento</td>
+      <td><input type="text" name="nombre" id="nombre" /></td>
+    </tr>
+    <tr>
+      <td>Cantidad del alimento a usar como referencia:</td>
+      <td><input type="text" name="cantidad" id="cantidad" /></td>
+      <td>
+        <select name="unidadAlimento" id="unidadAlimento">
+                    <option value="g">g</option>
+                    <option value="Kg">Kg</option>
+                    <option value="L">L</option>
+                    <option value="mL">mL</option>
+
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Cantidad de calorias que aporta esta cantidad</td>
+      <td><input type="text" name="calorias" id="calorias" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="button" name="agregar" id="agregar" value="Agregar" />
+      <input type="button" name="cerrar" id="cerrar" value="Cerrar" /></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
